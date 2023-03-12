@@ -160,7 +160,7 @@ export default function Layout({ title, description, children }) {
               onClose={sidebarCloseHandler}
             >
               <List>
-                <ListItem>
+                <ListItem sx={classes.categorysort}>
                   <Box
                     display="flex"
                     alignItems="center"
@@ -171,7 +171,7 @@ export default function Layout({ title, description, children }) {
                       aria-label="close"
                       onClick={sidebarCloseHandler}
                     >
-                      <CancelIcon />
+                      <CancelIcon sx={classes.clossbar} />
                     </IconButton>
                   </Box>
                 </ListItem>

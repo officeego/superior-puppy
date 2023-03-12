@@ -16,7 +16,8 @@ const classes = {
   },
   appbar: {
     // backgroundColor: '#203040',
-    backgroundColor: '#09353d',
+    backgroundColor: 'gray',
+    // backgroundColor: '#09353d',
     // position:'fixed',
     // zIndex: '1',
     '& a': {
@@ -48,6 +49,14 @@ const classes = {
     display: 'none',
   },
   // search
+  categorysort:{
+    backgroundColor:'gray',
+  },
+  clossbar:{
+    backgroundColor: 'yellow',
+    color:'red',
+    borderRadius: '50px',
+  },
 
   searchForm: {
     border: '1px solid #ffffff',
