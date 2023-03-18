@@ -22,6 +22,10 @@ import {
   Typography,
   useMediaQuery,
 } from '@mui/material';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import CancelIcon from '@mui/icons-material/Cancel';
@@ -36,6 +40,7 @@ import { useRouter } from 'next/router';
 import axios from 'axios';
 import { useSnackbar } from 'notistack';
 import { getError } from '../utils/error';
+import { Twitter } from '@mui/icons-material';
 
 export default function Layout({ title, description, children }) {
   const router = useRouter();
@@ -199,7 +204,7 @@ export default function Layout({ title, description, children }) {
                   <InputBase
                     name="query"
                     sx={classes.searchInput}
-                    placeholder="Search products"
+                    placeholder="Search Puppy"
                     onChange={queryChangeHandler}
                   />
                   <IconButton
@@ -212,7 +217,7 @@ export default function Layout({ title, description, children }) {
                 </Box>
               </form>
             </Box>
-
+            {/* <Typography sx={classes.customercare} ><WhatsAppIcon sx={classes.whatsapp} /> +546(435) 67889</Typography> */}
             <Box>
               <Switch
                 checked={darkMode}
@@ -276,11 +281,27 @@ export default function Layout({ title, description, children }) {
             </Box>
           </Toolbar>
         </AppBar>
+        <Typography sx={classes.customercare} >Customer Care :<WhatsAppIcon sx={classes.whatsapp} /> +546(435) 67889</Typography>
         <Container component="main" sx={classes.main}>
           {children}
         </Container>
         <Box component="footer" sx={classes.footer}>
-          <Typography>All rights reserved. Sanity Amazona.</Typography>
+          <Typography>All rights reserved SupPupps 2023.</Typography>
+          <NextLink href="/" passHref>
+             <Link>
+              <FacebookIcon sx={classes.facebook} />
+            </Link>
+          </NextLink>
+          <NextLink href="hgghjkkkk" target='_blank' passHref>
+             <Link>
+             <InstagramIcon sx={classes.instagram} />
+            </Link>
+          </NextLink>
+          <NextLink href="/" passHref>
+             <Link>
+             <TwitterIcon sx={classes.twitter} />
+            </Link>
+          </NextLink>
         </Box>
       </ThemeProvider>
     </>

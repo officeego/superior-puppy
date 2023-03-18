@@ -24,16 +24,16 @@ import { Store } from '../utils/Store';
 
 const prices = [
   {
-    name: '$1 to $50',
-    value: '1-50',
+    name: '$3500 to $5000',
+    value: '3500-5000',
   },
   {
-    name: '$51 to $200',
-    value: '51-200',
+    name: '$5000 to $7500',
+    value: '5000-7500',
   },
   {
-    name: '$201 to $1000',
-    value: '201-1000',
+    name: '$7500 to $10000',
+    value: '7500-10000',
   },
 ];
 

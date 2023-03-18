@@ -13,7 +13,36 @@ const classes = {
   footer: {
     marginTop: 1,
     textAlign: 'center',
+    backgroundColor: 'gray',
+    paddingBottom: '50px',
+    letterSpacing: '4px',
   },
+
+  facebook: {
+    color: 'blue',
+
+  },
+  instagram: {
+  color: '#962fbf',
+  letterSpacing: '5px',
+  },
+  twitter: {
+    color: 'blue',
+  },
+  customercare:{
+    color: 'wheat',
+    display: 'flex',
+    justifyContent: 'center',
+    // textAlign: 'center',
+    backgroundColor: 'darkgray',
+    padding: '8px',
+    boxShadow: '30px 30px 30px',
+  },
+  whatsapp: {
+    color: 'green',
+    
+  },
+
   appbar: {
     // backgroundColor: '#203040',
     backgroundColor: 'gray',
