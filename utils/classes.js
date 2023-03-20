@@ -94,7 +94,7 @@ const classes = {
   },
   searchInput: {
     paddingLeft: 1,
-    color: '#000000',
+    color: 'green',
     width: '220px',
     '& ::placeholder': {
       color: '#606060',

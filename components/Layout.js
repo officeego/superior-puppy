@@ -297,7 +297,7 @@ export default function Layout({ title, description, children }) {
              <InstagramIcon sx={classes.instagram} />
             </Link>
           </NextLink>
-          <NextLink href="/" passHref>
+          <NextLink href="FFFGJdhj" passHref>
              <Link>
              <TwitterIcon sx={classes.twitter} />
             </Link>
