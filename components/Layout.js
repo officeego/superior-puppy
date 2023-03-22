@@ -22,6 +22,12 @@ import {
   Typography,
   useMediaQuery,
 } from '@mui/material';
+import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
+import HomeIcon from '@mui/icons-material/Home';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import SubdirectoryArrowLeftIcon from '@mui/icons-material/SubdirectoryArrowLeft';
+import SubdirectoryArrowRightIcon from '@mui/icons-material/SubdirectoryArrowRight';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -204,7 +210,7 @@ export default function Layout({ title, description, children }) {
                   <InputBase
                     name="query"
                     sx={classes.searchInput}
-                    placeholder="Search Puppy"
+                    placeholder="search for puppy"
                     onChange={queryChangeHandler}
                   />
                   <IconButton
@@ -218,6 +224,9 @@ export default function Layout({ title, description, children }) {
               </form>
             </Box>
             {/* <Typography sx={classes.customercare} ><WhatsAppIcon sx={classes.whatsapp} /> +546(435) 67889</Typography> */}
+               {/* <NextLink href="/about" passHref>
+                  <Link>About Us</Link>
+                </NextLink> */}
             <Box>
               <Switch
                 checked={darkMode}
@@ -281,12 +290,28 @@ export default function Layout({ title, description, children }) {
             </Box>
           </Toolbar>
         </AppBar>
-        <Typography sx={classes.customercare} >Customer Care :<WhatsAppIcon sx={classes.whatsapp} /> +546(435) 67889</Typography>
+        <Typography sx={classes.customercare} >
+        {/* <Typography>
+              <NextLink href="/about" passHref>
+                  <Link>Customer Care <SubdirectoryArrowLeftIcon/></Link>
+                </NextLink>
+                </Typography> */}
+          
+          🔔 Customer Care :<WhatsAppIcon sx={classes.whatsapp} /> +546(435) 67889  🔔<ArrowRightAltIcon/> <NextLink NextLink href="/about" passHref><Link>About Us</Link></NextLink>
+            {/* <Typography>
+              <NextLink href="/about" passHref>
+                  <Link><SubdirectoryArrowRightIcon /> About Us</Link>
+                </NextLink>
+                </Typography> */}
+            </Typography>
         <Container component="main" sx={classes.main}>
           {children}
         </Container>
         <Box component="footer" sx={classes.footer}>
-          <Typography>All rights reserved SupPupps 2023.</Typography>
+          <Typography>Email:<MarkEmailReadIcon/> suppups@gmail.com</Typography>
+          <Typography>Location:<LocationOnIcon/> Located in Brooklyn, New York.</Typography>
+          <Typography>Address:<HomeIcon/> 1690 80th street Brooklyn NY 11214</Typography>
+          {/* <Typography>All rights reserved SupPupps 2023.</Typography> */}
           <NextLink href="/" passHref>
              <Link>
               <FacebookIcon sx={classes.facebook} />
@@ -302,6 +327,7 @@ export default function Layout({ title, description, children }) {
              <TwitterIcon sx={classes.twitter} />
             </Link>
           </NextLink>
+          <Typography>All rights reserved SupPupps 2023.</Typography>
         </Box>
       </ThemeProvider>
     </>

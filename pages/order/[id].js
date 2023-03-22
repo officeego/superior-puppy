@@ -223,7 +223,7 @@ function OrderScreen({ params }) {
                         {orderItems.map((item) => (
                           <TableRow key={item._key}>
                             <TableCell>
-                              <NextLink href={`/product/${item.slug}`} passHref>
+                              {/* <NextLink href={`/product/${item.slug}`} passHref> */}
                                 <Link>
                                   <Image
                                     src={item.image}
@@ -232,14 +232,14 @@ function OrderScreen({ params }) {
                                     height={50}
                                   ></Image>
                                 </Link>
-                              </NextLink>
+                              {/* </NextLink> */}
                             </TableCell>
                             <TableCell>
-                              <NextLink href={`/product/${item.slug}`} passHref>
+                              {/* <NextLink href={`/product/${item.slug}`} passHref> */}
                                 <Link>
                                   <Typography>{item.name}</Typography>
                                 </Link>
-                              </NextLink>
+                              {/* </NextLink> */}
                             </TableCell>
                             <TableCell align="right">
                               <Typography>{item.quantity}</Typography>

@@ -16,6 +16,7 @@ const classes = {
     backgroundColor: 'gray',
     paddingBottom: '50px',
     letterSpacing: '4px',
+    padding:'10px',
   },
 
   facebook: {
@@ -27,7 +28,7 @@ const classes = {
   letterSpacing: '5px',
   },
   twitter: {
-    color: 'blue',
+    color: 'black',
   },
   customercare:{
     color: 'wheat',
@@ -37,6 +38,7 @@ const classes = {
     backgroundColor: 'darkgray',
     padding: '8px',
     boxShadow: '30px 30px 30px',
+    fontWeight: 'bold',
   },
   whatsapp: {
     color: 'green',
@@ -86,11 +88,17 @@ const classes = {
     color:'red',
     borderRadius: '50px',
   },
+  aboutus:{
+    backgroundColor:'red',
+   
+    flexDirection:'column',
+  },
 
   searchForm: {
     border: '1px solid #ffffff',
     backgroundColor: '#ffffff',
-    borderRadius: 1,
+    // borderRadius: 1,
+    borderRadius: 5,
   },
   searchInput: {
     paddingLeft: 1,
@@ -102,8 +110,10 @@ const classes = {
   },
   searchButton: {
     backgroundColor: '#f8c040',
+    color:'green',
     padding: 1,
-    borderRadius: '0 5px 5px 0',
+    // borderRadius: '0 5px 5px 0',
+    borderRadius: 5,
     '& span': {
       color: '#000000',
     },
